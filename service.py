@@ -71,7 +71,7 @@ async def run_main(input_data: InputModel):
         print(result2)
         subprocess.run
         result = subprocess.run(
-            'source .venv/bin/activate && crewai run', shell=True, capture_output=True, text=True
+            './.venv/bin/activate && crewai run', shell=True, capture_output=True, text=True
         )
         
         # Save stdout to a file
