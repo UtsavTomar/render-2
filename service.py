@@ -65,13 +65,13 @@ app = FastAPI()
 async def run_main(input_data: InputModel):
     try:
         # Execute the command and capture both stdout and stderr
-        result1 = subprocess.run(["uv", "lock"], capture_output=True, text=True)
-        print(result1)
-        result2 = subprocess.run(["uv", "lock"], capture_output=True, text=True)
-        print(result2)
-        subprocess.run
+        # result1 = subprocess.run(["uv", "lock"], capture_output=True, text=True)
+        # print(result1)
+        # result2 = subprocess.run(["uv", "lock"], capture_output=True, text=True)
+        # print(result2)
+        # subprocess.run
         result = subprocess.run(
-            './.venv/bin/activate && crewai run', shell=True, capture_output=True, text=True
+            'crewai run', shell=True, capture_output=True, text=True
         )
         
         # Save stdout to a file
